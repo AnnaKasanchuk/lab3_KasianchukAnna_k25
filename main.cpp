@@ -65,5 +65,6 @@ int main() {
     }
     const auto sec = std::chrono::duration_cast<std::chrono::seconds>(
         std::chrono::steady_clock::now() - start).count();
+
     std::osyncstream(std::cout) << "Computation completed. Duration " << sec << " seconds.\n";
 }
